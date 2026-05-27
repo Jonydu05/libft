@@ -1,0 +1,7 @@
+// testar DEL na função original
+int ft_isprint(int num)
+{
+    if (num >= 32 && num <= 126)
+        return (1);
+    return (0);
+}
