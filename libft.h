@@ -3,10 +3,11 @@
 
 #include <stdlib.h>
 
-void    ft_bzero(void *mem, size_t n);
+char	*ft_strchr(const char *s, int c);
 void    *ft_memset(void *mem, int x, size_t n);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
 void	*ft_memmove(void *dest, const void *src, size_t n);
+void    ft_bzero(void *mem, size_t n);
 int		ft_isalnum(int num);
 int		ft_isalpha(int num);
 int		ft_isascii(int num);
