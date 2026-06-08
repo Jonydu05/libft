@@ -16,6 +16,7 @@ int		ft_isdigit(int num);
 int		ft_isprint(int num);
 int		ft_strlen(char *str);
 int		ft_atoi(char *str);
+int		ft_strncmp(char *s1, char *s2, unsigned int n);
 char    ft_tolower(char c);
 char	ft_toupper(char c);
 
