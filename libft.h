@@ -5,6 +5,7 @@
 
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
+char	*ft_strnstr(char *str, char *to_find, size_t len);
 void    *ft_memset(void *mem, int x, size_t n);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
 void	*ft_memchr(const void *mem, int ch, size_t count);
