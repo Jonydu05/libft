@@ -11,6 +11,7 @@ void    *ft_memset(void *mem, int x, size_t n);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
 void	*ft_memchr(const void *mem, int ch, size_t count);
 void	*ft_memmove(void *dest, const void *src, size_t n);
+void	*ft_calloc(size_t num, size_t size);
 void    ft_bzero(void *mem, size_t n);
 int		ft_memcmp(const void *lhs, const void *rhs, size_t count);
 int		ft_isalnum(int num);
