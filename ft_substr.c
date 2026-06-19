@@ -6,5 +6,5 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 	if (!s)
 		return (0);
-	return (ft_strlcpy(temp, &s[start], len));
+	return (ft_memcpy(temp, &s[start], len));
 }
