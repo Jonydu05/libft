@@ -6,7 +6,7 @@
 /*   By: jzampier <jzampier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/30 15:51:42 by jzampier          #+#    #+#             */
-/*   Updated: 2026/06/30 16:23:41 by jzampier         ###   ########.fr       */
+/*   Updated: 2026/06/30 18:59:40 by jzampier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,5 @@ int	ft_memcmp(const void *lhs, const void *rhs, size_t count)
 			return (left[i] - right[i]);
 		i++;
 	}
-	return (0);
+	return (NULL);
 }
