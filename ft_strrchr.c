@@ -1,9 +1,21 @@
-char *ft_strrchr(const char *s, int c)
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jzampier <jzampier@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/06/30 15:52:14 by jzampier          #+#    #+#             */
+/*   Updated: 2026/06/30 15:56:06 by jzampier         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+char	*ft_strrchr(const char *s, int c)
 {
-	char *found;
+	char	*found;
 
 	found = 0;
-	while(*s)
+	while (*s)
 	{
 		if (*s && *s == c)
 			found = s;

@@ -1,9 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jzampier <jzampier@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/06/30 15:51:49 by jzampier          #+#    #+#             */
+/*   Updated: 2026/06/30 15:54:40 by jzampier         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <libft.h>
 
-void    *ft_memset(void *mem, int x, size_t n)
+void	*ft_memset(void *mem, int x, size_t n)
 {
-	unsigned char   *ptr;
-	size_t          i;
+	unsigned char	*ptr;
+	size_t			i;
 
 	i = 0;
 	ptr = (unsigned char *)mem;
