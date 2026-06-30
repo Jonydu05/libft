@@ -6,11 +6,11 @@
 /*   By: jzampier <jzampier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/30 15:52:20 by jzampier          #+#    #+#             */
-/*   Updated: 2026/06/30 15:52:21 by jzampier         ###   ########.fr       */
+/*   Updated: 2026/06/30 16:01:03 by jzampier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char    ft_tolower(char c)
+char	ft_tolower(char c)
 {
 	if (c >= 'A' && c <= 'Z')
 		return (c += 32);
