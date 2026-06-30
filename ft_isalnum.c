@@ -6,11 +6,11 @@
 /*   By: jzampier <jzampier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/30 15:51:07 by jzampier          #+#    #+#             */
-/*   Updated: 2026/06/30 15:51:08 by jzampier         ###   ########.fr       */
+/*   Updated: 2026/06/30 18:52:24 by jzampier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isalnum(int num)
+int	ft_isalnum(int num)
 {
 	if (num >= '0' && num <= '9')
 		return (1);
@@ -20,4 +20,3 @@ int ft_isalnum(int num)
 		return (1);
 	return (0);
 }
- 

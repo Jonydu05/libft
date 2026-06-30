@@ -6,11 +6,11 @@
 /*   By: jzampier <jzampier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/30 15:51:55 by jzampier          #+#    #+#             */
-/*   Updated: 2026/06/30 15:51:55 by jzampier         ###   ########.fr       */
+/*   Updated: 2026/06/30 16:32:03 by jzampier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 int	is_sep(char c, char *charset)
 {
@@ -87,15 +87,15 @@ void	build_split(char *str, char *charset, char **split_strings, int size)
 	split_strings[split_i] = NULL;
 }
 
-char	**ft_split(char *str, char *charset)
+char	**ft_split(char *s, char *c)
 {
 	char	**split_strings;
 	int		size;
 
-	split_strings = malloc(((count_words(str, charset) + 1) * sizeof(char *)));
+	split_strings = malloc(((count_words(s, c) + 1) * sizeof(char *)));
 	size = 0;
-	while (str[size])
+	while (s[size])
 		size++;
-	build_split(str, charset, split_strings, size);
+	build_split(s, c, split_strings, size);
 	return (split_strings);
 }

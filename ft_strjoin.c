@@ -6,11 +6,11 @@
 /*   By: jzampier <jzampier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/30 15:52:00 by jzampier          #+#    #+#             */
-/*   Updated: 2026/06/30 15:52:00 by jzampier         ###   ########.fr       */
+/*   Updated: 2026/06/30 16:24:14 by jzampier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 int	count_strs_len(char **strs, int size)
 {

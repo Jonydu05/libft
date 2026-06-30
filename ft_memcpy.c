@@ -6,11 +6,11 @@
 /*   By: jzampier <jzampier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/30 15:51:44 by jzampier          #+#    #+#             */
-/*   Updated: 2026/06/30 15:53:54 by jzampier         ###   ########.fr       */
+/*   Updated: 2026/06/30 16:23:46 by jzampier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {

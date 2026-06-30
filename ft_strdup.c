@@ -6,11 +6,11 @@
 /*   By: jzampier <jzampier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/30 15:51:57 by jzampier          #+#    #+#             */
-/*   Updated: 2026/06/30 15:51:57 by jzampier         ###   ########.fr       */
+/*   Updated: 2026/06/30 16:24:07 by jzampier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 char	*ft_strdup(char *src)
 {
