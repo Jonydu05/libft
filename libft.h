@@ -6,7 +6,7 @@
 /*   By: jzampier <jzampier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/30 15:52:26 by jzampier          #+#    #+#             */
-/*   Updated: 2026/06/30 21:17:35 by jzampier         ###   ########.fr       */
+/*   Updated: 2026/07/01 21:06:54 by jzampier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n);
 void	*ft_calloc(size_t num, size_t size);
 void	ft_bzero(void *mem, size_t n);
 void	ft_putchar_fd(char c, int fd);
+void	ft_putstr_fd(char *s, int fd);
+void	ft_putnbr_fd(int n, int fd);
 int		ft_memcmp(const void *lhs, const void *rhs, size_t count);
 int		ft_isalnum(int num);
 int		ft_isalpha(int num);
