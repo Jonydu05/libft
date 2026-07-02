@@ -6,7 +6,7 @@
 /*   By: jzampier <jzampier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/30 15:52:00 by jzampier          #+#    #+#             */
-/*   Updated: 2026/06/30 16:24:14 by jzampier         ###   ########.fr       */
+/*   Updated: 2026/07/02 18:58:50 by jzampier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,17 +67,15 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 {
 	char	*new_str;
 	int		size_strs;
-	int		size_sep;
 
 	size_strs = count_strs_len(strs, size);
-	size_sep = ft_strlen(sep);
 	if (size == 0)
 	{
 		new_str = malloc(1);
 		new_str[0] = '\0';
 		return (new_str);
 	}
-	new_str = malloc((size_strs + (size_sep * (size - 1))) * sizeof(char) + 1);
+	new_str = malloc(size_strs * sizeof(char) + 1);
 	fill_str(new_str, strs, sep, size);
 	return (new_str);
 }

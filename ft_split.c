@@ -6,7 +6,7 @@
 /*   By: jzampier <jzampier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/30 15:51:55 by jzampier          #+#    #+#             */
-/*   Updated: 2026/07/02 18:07:21 by jzampier         ###   ########.fr       */
+/*   Updated: 2026/07/02 18:52:07 by jzampier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,8 @@ char	*get_word(char const *str, int start, int end)
 
 	i = 0;
 	word = malloc((end - start) * sizeof(char) + 1);
+	if (!word)
+		return (NULL);
 	while (start < end)
 	{
 		word[i] = str[start];
