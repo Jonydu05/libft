@@ -6,7 +6,7 @@
 /*   By: jzampier <jzampier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/02 15:05:07 by jzampier          #+#    #+#             */
-/*   Updated: 2026/07/02 15:45:23 by jzampier         ###   ########.fr       */
+/*   Updated: 2026/07/02 17:51:17 by jzampier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 	while ((*lst)->next != NULL)
 	{
 		temp = (*lst)->next;
-		ft_lstdelone(lst, del);
+		ft_lstdelone(*lst, del);
 		*lst = temp;
 	}
 	*lst = NULL;

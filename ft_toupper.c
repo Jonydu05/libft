@@ -6,13 +6,13 @@
 /*   By: jzampier <jzampier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/30 15:52:23 by jzampier          #+#    #+#             */
-/*   Updated: 2026/06/30 15:52:23 by jzampier         ###   ########.fr       */
+/*   Updated: 2026/07/02 18:34:02 by jzampier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	ft_toupper(char c)
+int	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')
-		return (c -= 32);
+		c = c - 32;
 	return (c);
 }

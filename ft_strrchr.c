@@ -6,20 +6,22 @@
 /*   By: jzampier <jzampier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/30 15:52:14 by jzampier          #+#    #+#             */
-/*   Updated: 2026/06/30 15:56:06 by jzampier         ###   ########.fr       */
+/*   Updated: 2026/07/02 18:17:20 by jzampier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strrchr(const char *s, int c)
 {
 	char	*found;
+	int		i;
 
 	found = 0;
-	while (*s)
+	i = 0;
+	while (s[i])
 	{
-		if (*s && *s == c)
-			found = s;
-		*s++;
+		if (s[i] == c)
+			found = (char *)&s[i];
+		i++;
 	}
 	return (found);
 }

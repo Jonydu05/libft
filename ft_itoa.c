@@ -6,7 +6,7 @@
 /*   By: jzampier <jzampier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/30 16:00:25 by jzampier          #+#    #+#             */
-/*   Updated: 2026/06/30 21:05:34 by jzampier         ###   ########.fr       */
+/*   Updated: 2026/07/02 17:50:51 by jzampier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ char	*ft_itoa(int n)
 		return (NULL);
 	str[len] = '\0';
 	if (n == 0)
-		str[0] == '0';
+		str[0] = '0';
 	if (nb < 0)
 	{
 		nb = nb * -1;

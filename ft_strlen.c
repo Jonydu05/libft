@@ -6,11 +6,11 @@
 /*   By: jzampier <jzampier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/30 15:52:07 by jzampier          #+#    #+#             */
-/*   Updated: 2026/06/30 15:52:07 by jzampier         ###   ########.fr       */
+/*   Updated: 2026/07/02 18:14:07 by jzampier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
+int	ft_strlen(char const *str)
 {
 	int	i;
 

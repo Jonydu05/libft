@@ -6,23 +6,14 @@
 /*   By: jzampier <jzampier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/30 15:52:02 by jzampier          #+#    #+#             */
-/*   Updated: 2026/06/30 16:24:22 by jzampier         ###   ########.fr       */
+/*   Updated: 2026/07/02 18:19:56 by jzampier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(char *str)
-{
-	size_t	i;
 
-	i = 0;
-	while (str[i] != '\0')
-		i++;
-	return (i);
-}
-
-size_t	ft_strlcat(char *dest, char *src, size_t size)
+size_t	ft_strlcat(char *dest, char const *src, size_t size)
 {
 	size_t	i;
 	size_t	dest_len;

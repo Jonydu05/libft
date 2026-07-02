@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchar.c                                       :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jzampier <jzampier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/30 15:51:38 by jzampier          #+#    #+#             */
-/*   Updated: 2026/06/30 18:59:33 by jzampier         ###   ########.fr       */
+/*   Updated: 2026/07/02 17:56:21 by jzampier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	*ft_memchr(const void *mem, int ch, size_t count)
 {
 	unsigned char	c;
 	unsigned char	*ptr;
-	int				i;
+	size_t			i;
 
 	c = ch;
 	ptr = (unsigned char *)mem;
@@ -24,7 +24,8 @@ void	*ft_memchr(const void *mem, int ch, size_t count)
 	while (i < count)
 	{
 		if (c == *ptr)
-			return (mem + i);
+			return ((void *)&mem[i]);
+		i++;
 	}
 	return (NULL);
 }

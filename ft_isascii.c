@@ -6,13 +6,13 @@
 /*   By: jzampier <jzampier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/30 15:51:13 by jzampier          #+#    #+#             */
-/*   Updated: 2026/06/30 18:50:18 by jzampier         ###   ########.fr       */
+/*   Updated: 2026/07/02 18:31:58 by jzampier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isascii(int num)
 {
-	if (num <= 127)
+	if (num >= 0 && num <= 127)
 		return (1);
 	return (0);
 }

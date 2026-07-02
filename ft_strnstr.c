@@ -6,7 +6,7 @@
 /*   By: jzampier <jzampier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/30 15:52:11 by jzampier          #+#    #+#             */
-/*   Updated: 2026/06/30 16:24:35 by jzampier         ###   ########.fr       */
+/*   Updated: 2026/07/02 18:15:49 by jzampier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strnstr(char *str, char *to_find, size_t len)
 {
-	int	index;
-	int	substring_index;
+	size_t	index;
+	size_t	substring_index;
 
 	index = 0;
 	if (*to_find == '\0')

@@ -6,14 +6,14 @@
 /*   By: jzampier <jzampier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/30 15:51:10 by jzampier          #+#    #+#             */
-/*   Updated: 2026/06/30 15:53:10 by jzampier         ###   ########.fr       */
+/*   Updated: 2026/07/02 18:31:00 by jzampier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isalpha(int num)
 {
 	if ((num >= 'A' && num <= 'Z')
-		&& (num >= 'a' && num <= 'b'))
+		|| (num >= 'a' && num <= 'z'))
 		return (1);
 	return (0);
 }
