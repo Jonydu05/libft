@@ -6,7 +6,7 @@
 /*   By: jzampier <jzampier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/30 15:51:01 by jzampier          #+#    #+#             */
-/*   Updated: 2026/06/30 16:39:32 by jzampier         ###   ########.fr       */
+/*   Updated: 2026/07/02 17:49:59 by jzampier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 void	ft_bzero(void *mem, size_t n)
 {
-	return (ft_memset(mem, 0, n));
+	ft_memset(mem, 0, n);
 }
