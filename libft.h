@@ -6,7 +6,7 @@
 /*   By: jzampier <jzampier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/30 15:52:26 by jzampier          #+#    #+#             */
-/*   Updated: 2026/07/02 15:49:08 by jzampier         ###   ########.fr       */
+/*   Updated: 2026/07/02 16:25:15 by jzampier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ typedef struct s_list
 	struct s_list	*next;
 }	t_list;
 
+char	**ft_split(char const *s, char c);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
 char	*ft_strnstr(char *str, char *to_find, size_t len);
@@ -35,10 +36,10 @@ void	*ft_memcpy(void *dest, const void *src, size_t n);
 void	*ft_memchr(const void *mem, int ch, size_t count);
 void	*ft_memmove(void *dest, const void *src, size_t n);
 void	*ft_calloc(size_t num, size_t size);
-char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void	ft_bzero(void *mem, size_t n);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
+void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 void	ft_lstadd_front(t_list **lst, t_list *new);
