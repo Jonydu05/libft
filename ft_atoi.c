@@ -10,54 +10,29 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int	is_number(char c);
-int	allowed_chars(char c, int *num);
-int	ft_atoi(char *str);
-int	is_space(char c);
+#include "libft.h"
 
-int	is_space(char c)
+int	ft_atoi(const char *str)
 {
-	if ((c > 8 && c < 14) || c == 32)
-		return (1);
-	return (0);
-}
+	int i;
+	int res;
+	int sign;
 
-int	is_number(char c)
-{
-	if (c >= '0' && c <= '9')
-		return (1);
-	return (0);
-}
-
-int	allowed_chars(char c, int *num)
-{
-	if (is_number(c))
-		return (1);
-	if ((c == '+' || c == '-' || is_space(c)) && *num == 0)
-		return (1);
-	return (0);
-}
-
-int	ft_atoi(char *str)
-{
-	int	num;
-	int	sign;
-	int	temp;
-
+	i = 0;
+	res = 0;
 	sign = 1;
-	num = 0;
-	while (*str != '\0')
+	while (str[i] == ' ' || (str[i] >= 9 && str[i] <= 13))
+		i++;
+	if (str[i] == '-' || str[i] == '+')
 	{
-		if (!allowed_chars(*str, &num))
-			break ;
-		if (*str == '-')
+		if (str[i] == '-')
 			sign *= -1;
-		if (is_number(*str))
-		{
-			temp = *str - '0';
-			num = num * 10 + temp;
-		}
-		str++;
+		i++;
 	}
-	return (num * sign);
+	while (str[i] >= '0' && str[i] <= '9')
+	{
+		res = res * 10 + (str[i] - '0');
+		i++;
+	}
+	return (res * sign);
 }
