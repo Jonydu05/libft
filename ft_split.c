@@ -6,16 +6,16 @@
 /*   By: jzampier <jzampier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/30 15:51:55 by jzampier          #+#    #+#             */
-/*   Updated: 2026/07/08 00:44:15 by jzampier         ###   ########.fr       */
+/*   Updated: 2026/07/09 11:52:30 by jzampier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int count_words(const char *s, char c)
+static int	count_words(const char *s, char c)
 {
-	int words;
-	int i;
+	int	words;
+	int	i;
 
 	i = 0;
 	words = 0;
@@ -24,7 +24,7 @@ static int count_words(const char *s, char c)
 		while (s[i] == c)
 			i++;
 		if (s[i] == '\0')
-			break;
+			break ;
 		words++;
 		while (s[i] != c)
 			i++;
@@ -32,7 +32,7 @@ static int count_words(const char *s, char c)
 	return (words);
 }
 
-static char **free_arr(char **arr, int i)
+static char	**free_arr(char **arr, int i)
 {
 	while (i > 0)
 	{
@@ -43,11 +43,11 @@ static char **free_arr(char **arr, int i)
 	return (NULL);
 }
 
-static char **fill_arr(char **arr, char const *s, char c)
+static char	**fill_arr(char **arr, char const *s, char c)
 {
-	int i;
-	int arr_i;
-	int start;
+	int	i;
+	int	arr_i;
+	int	start;
 
 	i = 0;
 	arr_i = 0;
@@ -57,7 +57,6 @@ static char **fill_arr(char **arr, char const *s, char c)
 			i++;
 		if (s[i] != '\0')
 		{
-
 			start = i;
 			while (s[i] != '\0' && s[i] != c)
 				i++;
@@ -71,9 +70,9 @@ static char **fill_arr(char **arr, char const *s, char c)
 	return (arr);
 }
 
-char **ft_split(char const *s, char c)
+char	**ft_split(char const *s, char c)
 {
-	char **arr;
+	char	**arr;
 
 	if (!s)
 		return (NULL);

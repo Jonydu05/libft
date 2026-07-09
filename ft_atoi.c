@@ -6,7 +6,7 @@
 /*   By: jzampier <jzampier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/30 15:50:56 by jzampier          #+#    #+#             */
-/*   Updated: 2026/07/07 23:43:48 by jzampier         ###   ########.fr       */
+/*   Updated: 2026/07/09 11:52:22 by jzampier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int	ft_atoi(const char *str)
 {
-	int i;
-	int res;
-	int sign;
+	int	i;
+	int	res;
+	int	sign;
 
 	i = 0;
 	res = 0;
