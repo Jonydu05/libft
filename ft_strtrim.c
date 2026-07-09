@@ -6,7 +6,7 @@
 /*   By: jzampier <jzampier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/30 16:00:41 by jzampier          #+#    #+#             */
-/*   Updated: 2026/07/02 16:18:13 by jzampier         ###   ########.fr       */
+/*   Updated: 2026/07/09 12:05:35 by jzampier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,12 +20,12 @@ char	*ft_strtrim(char const *s1, char const *set)
 	if (!s1 || !set)
 		return (NULL);
 	start = 0;
-	end = ft_strlen(s1) - 1;
-	while (s1[start] && ft_strchr(set, s1[start]))
+	while (s1[start] != '\0' && ft_strchr(set, s1[start]))
 		start++;
-	while (end > start && ft_strchr(set, s1[end]))
-		end--;
 	if (s1[start] == '\0')
 		return (ft_strdup(""));
+	end = ft_strlen(s1) - 1;
+	while (end > start && ft_strchr(set, s1[end]))
+		end--;
 	return (ft_substr(s1, start, end - start + 1));
 }
