@@ -34,16 +34,6 @@ From the project root:
 
    (adjust the `-L` path if `libft.a` and `libft.h` live in a different directory than `your_file.c`)
 
-## Technical Choices
-
-On top of the mandatory 42 Norm, this library follows a few self-imposed rules:
-
-- **No global variables** — every function is self-contained, which avoids hidden shared state and keeps the code naturally thread-safe.
-- **`static` helper functions** — internal helpers (e.g. counting words, computing a word's length) are declared `static`, so they stay private to their file and don't pollute the library's public API.
-- **Strict compilation flags** — every source file compiles cleanly with `-Wall -Wextra -Werror`, with zero warnings.
-- **`ar`-based archiving** — `libft.a` is built with `ar rcs`, without relying on `libtool` or other build abstractions.
-- **Defensive memory management** — every `malloc` return value is checked. Functions that perform several allocations (like `ft_split`) free everything they have already allocated if a later allocation fails, following an `ft_free_all`-style cleanup pattern.
-
 ## Library Overview
 
 ### Part 1 — Libc function clones
@@ -112,3 +102,8 @@ On top of the mandatory 42 Norm, this library follows a few self-imposed rules:
 
 - [Linux man pages, section 3](https://man7.org/linux/man-pages/) — reference behaviour for the libc functions being reimplemented (`man strlcpy`, `man memmove`, `man strtok`, etc.)
 - 42's Norm documentation (`norminette`) — the coding-style rules enforced throughout the project
+
+### AI Usage
+
+- AI was used in the debug process and for code review
+- It was also used for supporting in the creating of this file
