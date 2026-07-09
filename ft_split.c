@@ -6,7 +6,7 @@
 /*   By: jzampier <jzampier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/30 15:51:55 by jzampier          #+#    #+#             */
-/*   Updated: 2026/07/09 11:52:30 by jzampier         ###   ########.fr       */
+/*   Updated: 2026/07/09 12:56:10 by jzampier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ static int	count_words(const char *s, char c)
 		if (s[i] == '\0')
 			break ;
 		words++;
-		while (s[i] != c)
+		while (s[i] != '\0' && s[i] != c)
 			i++;
 	}
 	return (words);
@@ -61,9 +61,9 @@ static char	**fill_arr(char **arr, char const *s, char c)
 			while (s[i] != '\0' && s[i] != c)
 				i++;
 			arr[arr_i] = ft_substr(s, start, i - start);
-			if (!arr)
+			if (!arr[arr_i])
 				return (free_arr(arr, arr_i));
-			i++;
+			arr_i++;
 		}
 	}
 	arr[arr_i] = NULL;
